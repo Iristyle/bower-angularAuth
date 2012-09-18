@@ -1,0 +1,7 @@
+{
+  "name": "Angular-Auth",
+  "version": "0.0.1",
+  "main": ["./angular-auth.js"],
+  "dependencies": {
+  }
+}
