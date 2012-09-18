@@ -16,7 +16,7 @@ For now, use in `component.json` like this
   "version": "1.0.0",
   "main": "",
   "dependencies": {
-    "mocha": "git+https://github.com/Iristyle/bower-angularAuth.git#0.0.1"
+    "angular-auth": "git+https://github.com/Iristyle/bower-angularAuth.git#0.0.1"
   }
 }
 ```
