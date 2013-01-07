@@ -63,5 +63,5 @@ angular.module('angular-auth', [])
             };
 
         };
-        $httpProvider.responseInterceptors.push(interceptor);
+        $httpProvider.responseInterceptors.push(['$rootScope', '$q', 'requests401', interceptor]);
     }]);
