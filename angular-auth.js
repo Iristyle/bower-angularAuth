@@ -39,7 +39,7 @@ angular.module('angular-auth', [])
  * $http interceptor.
  * On 401 response - it stores the request and broadcasts 'event:angular-auth-loginRequired'.
  */
-    .config(function($httpProvider) {
+    .config(['$httpProvider', function($httpProvider) {
         var interceptor = function($rootScope, $q, requests401) {
             function success(response) {
                 return response;
@@ -64,4 +64,4 @@ angular.module('angular-auth', [])
 
         };
         $httpProvider.responseInterceptors.push(interceptor);
-    });
+    }]);
